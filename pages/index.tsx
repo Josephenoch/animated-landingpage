@@ -31,7 +31,7 @@ export default function Home() {
      <Nav/>
      <HeroSection/>
      <div className="h-screen ">
-      <Wand/>
+      {/* <Wand/> */}
      </div>
     </main>
   );
