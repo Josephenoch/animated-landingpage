@@ -1,0 +1,53 @@
+.coin {
+    perspective: 1000px;
+}
+
+.coin-inner {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    transform-style: preserve-3d;
+    transition: transform 500ms;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, .5);
+}
+
+.group:hover .coin-inner {
+    transform: rotateY(-180deg);
+}
+
+.coin-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateZ(2deg);
+}
+
+.coin-face.back {
+    transform: rotateY(-180deg) rotateZ(-2deg);
+}
+
+.coin2-inner {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    transform-style: preserve-3d;
+    transition: transform 500ms;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, .5);
+}
+
+.group:hover .coin2-inner {
+    transform: rotateY(180deg);
+}
+
+.coin2-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateZ(-4deg);
+}
+
+.coin2-face.back {
+    transform: rotateY(180deg) rotateZ(4deg);
+}
