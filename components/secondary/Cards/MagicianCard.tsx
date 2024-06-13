@@ -28,11 +28,11 @@ const InitialState = () => {
 
 const WandState = () => {
   return(
-    <>
+    <div className="w-full">
     <Wand className="rotate-[265deg] relative -left-[60%] top-[340px] py-10 bg-[#1b1b1e] rounded-full z-10 group-hover:rotate-[275deg] duration-1000" />
       <img src="https://uploads-ssl.webflow.com/6408bea3de5aef58b7e197d4/641a223cb8c402fc3b141b77_wand-beam.png" loading="eager" data-w-id="91d287b8-e6da-98c4-bf09-734b1a9adbfe" alt="Beam of magic from wand" srcSet="https://uploads-ssl.webflow.com/6408bea3de5aef58b7e197d4/641a223cb8c402fc3b141b77_wand-beam-p-500.png 500w, https://uploads-ssl.webflow.com/6408bea3de5aef58b7e197d4/641a223cb8c402fc3b141b77_wand-beam.png 536w" sizes="(max-width: 1919px) 98.29847717285156px, 5vw" className="relative -left-[23.5%] -rotate-[5deg] group-hover:rotate-[5deg] -top-[20px] blur-sm  duration-1000 group-hover:-left-[16%] group-hover:scale-y-150 rounded-xl"/>
     
-    </>
+    </div>
   )
 }
 

@@ -38,7 +38,7 @@ export default function Home() {
       });
   }, []);
   return init && (
-    <main className={`${bgColor} duration-500 transition-all min-h-screen overflow-hidden`}
+    <main className={`${bgColor} duration-500 transition-all min-h-screen overflow-hidden flex flex-col items-center `}
     >
      <Nav/>
      <HeroSection/>

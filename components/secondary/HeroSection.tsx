@@ -96,11 +96,11 @@ const PhotoItem:FC<PropsType> = ({
   opacitySettings,
 }) => {
   const { scrollYProgress } = useScroll()
-  const right = rightSettings && useTransform(scrollYProgress, [0, 1], [rightSettings.start, rightSettings.stop])
+  const right =  useTransform(scrollYProgress, [0, 1], [rightSettings?.start, rightSettings?.stop])
   const top = useTransform(scrollYProgress, [0, 1], [topSettings.start, topSettings.stop])
   const rotate = useTransform(scrollYProgress, [0, 1], [rotateSettings.start, rotateSettings.stop])
   const opacity = useTransform(scrollYProgress, [0, 1], [opacitySettings.start, opacitySettings.stop])
-  const left = leftSettings && useTransform(scrollYProgress, [0, 1], [leftSettings?.start, leftSettings?.stop])
+  const left = useTransform(scrollYProgress, [0, 1], [leftSettings?.start, leftSettings?.stop])
   return(
     <motion.div
     className="hover:scale-105 transform"
