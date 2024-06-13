@@ -4,7 +4,7 @@ import React from 'react'
 
 const Nav = () => {
   return (
-    <nav className="flex h-[70px] items-center  px-4 relative">
+    <nav className="flex h-[70px] items-center w-full  px-4 relative">
         <ul className="flex w-full justify-between items-center">
             <div className="flex space-x-3 items-center">
                 <CustomLink href="/" className="">FAQ</CustomLink>

@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <meta name="description" content="An animated landing page inspired by Buy me a coffee and Diagram.com"/>
       <link rel="icon" href="/favicon.png" />
       <meta name="keywords" content="Reactjs, Nextjs, Framer, Web animation, Frontend, Web, Developer, Joseph Enoch, Diagram.com" />
-      <meta name="og:url" content="https://technicalportfolio.josephenoch.com"/>
+      <meta name="og:url" content="https://animated-landingpage.josephenoch.com/"/>
       <meta name="og:description" content="An animated landing page inspired by Buy me a coffee and Diagram.com"/>
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="twitter:creator" content="@techbrojoe" />
