@@ -1,23 +1,32 @@
-import React from 'react'
+import React, { FC } from 'react'
+import { twMerge } from 'tailwind-merge'
 
-const Wand = () => {
+type PropsType = {
+    className?:string,
+    wandTipClassName?: string
+    wandShaftClassName?: string,
+}
+
+const Wand:FC<PropsType>= ({
+    className:addedClasses,
+    wandTipClassName,
+    wandShaftClassName
+}) => {
+    const className = twMerge("flex w-fit space-x-0 z-20", addedClasses)
   return (
-    <div  
-        style={{
-            transform: "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", 
-            transformStyle: "preserve-3d", 
-            opacity: 1
-        }} 
-        className="flex w-fit space-x-0">
-            <WandShaft/>
-            <WandTip/>
+    <div className={className}>
+            <WandShaft className={wandShaftClassName}/>
+            <WandTip className={wandTipClassName}/>
     </div>
   )
 }
 
-const WandShaft = () => {
+const WandShaft:FC<{className?: string}> = ({
+    className:addedClasses
+}) => {
+    const className = twMerge("w-96 bg-black shadow-xl  h-12 rounded-l-xl flex items-center justify-end",addedClasses)
     return (
-        <div className="w-96 bg-black shadow-xl  h-14 rounded-l-xl flex items-center justify-end">
+        <div className={className}>
             <WandStreak/>
         </div>
     )
@@ -25,15 +34,19 @@ const WandShaft = () => {
 
 
 
-const WandTip = () => {
+const WandTip:FC<{className?: string}> = ({
+    className:addedClasses
+}) => {
+    const className = twMerge("w-24 bg-white rounded-r-xl shadow-xl",addedClasses)
     return(
-       <div className="w-20 bg-white rounded-r-xl shadow-xl"/>
+       <div className={className}/>
     )
 }
 
-const WandStreak = () => {
+const WandStreak= () => {
     return(
-        <div className="w-0 h-0"
+        <div 
+        className={"w-0 h-0"}
         style={{
             borderTop: "14px solid transparent",
             borderBottom: "14px solid transparent",

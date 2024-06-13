@@ -1,8 +1,13 @@
 import React from 'react'
+import { CreativityCard, MagicianCard, SVGCard } from './Cards'
 
 const CardsSection = () => {
   return (
-    <div>CardsSection</div>
+    <section className="mt-20 px-20 flex justify-between">
+      <MagicianCard/>
+      <SVGCard/>
+      <CreativityCard/>
+    </section>
   )
 }
 

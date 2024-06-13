@@ -5,10 +5,10 @@ import { useTransform, useScroll, motion } from 'framer-motion'
 
 const HeroSection = () => {
   return (
-    <section className="flex flex-col justify-center items-center">
+    <section className="flex flex-col justify-center items-center ">
       <div className="flex flex-col mt-24 w-[600px] bg-red-10">
         <div className="flex items-center justify-center space-x-2">
-          <div className="flex space-x-1">
+          <div className="flex space-x-1 ">
             <StarIcon/>
             <StarIcon/>
             <StarIcon/>
@@ -103,7 +103,7 @@ const PhotoItem:FC<PropsType> = ({
   const left = leftSettings && useTransform(scrollYProgress, [0, 1], [leftSettings?.start, leftSettings?.stop])
   return(
     <motion.div
-    className="hover:scale-105 transform top-[150vh]rounded-full"
+    className="hover:scale-105 transform"
     style={{
       position: "absolute",
       right,
@@ -115,7 +115,7 @@ const PhotoItem:FC<PropsType> = ({
     >
       <img 
         src={imageUrl} width="192" height="172" 
-        className=" border border-gray-300 rounded-2xl  shadow-lg "
+        className=" border border-gray-300 rounded-[28px] shadow-lg"
         />
     </motion.div>
   )
